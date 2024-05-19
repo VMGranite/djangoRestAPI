@@ -2,28 +2,15 @@ version: '3.7'
 
 services:
   db:
-    image: postgres
-    restart: always
-    ports:
-      - '5432:5432'
+    image: postgres:10
     environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_PORT: 5432
-    networks:
-      - backend_network
-
-  pgadmin:
-    image: dpage/pgadmin4
-    depends_on:
-      - db
+      POSTGRES_DB: "mydb"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "123"
     ports:
-      - "5051:80"
-    environment:
-      PGADMIN_DEFAULT_EMAIL: vmg@admin.org
-      PGADMIN_DEFAULT_PASSWORD: password
-    restart: always
+      - "5432:5432"
+    volumes:
+      - ~/docker/postgres:/var/lib/postgresql/data
     networks:
       - backend_network
 
@@ -38,3 +25,6 @@ services:
 
 networks:
   backend_network:
+
+volumes:
+    dbdata:

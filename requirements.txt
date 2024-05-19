@@ -1,5 +1,4 @@
 Django>=3.2
-psycopg2-binary>=2.9
 requests
 djangorestframework-simplejwt
 djangorestframework~=3.15.1

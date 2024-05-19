@@ -2,9 +2,11 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import time
 
 
 def main():
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoRestAPI.settings')
     try:
@@ -19,4 +21,7 @@ def main():
 
 
 if __name__ == '__main__':
+    print("Before Sleep: " + str(time.time()))
+    time.sleep(15)
+    print("After Sleep: " + str(time.time()))
     main()

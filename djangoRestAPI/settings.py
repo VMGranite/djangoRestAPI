@@ -66,10 +66,10 @@ WSGI_APPLICATION = 'djangoRestAPI.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "mydatabase",
-        "USER": "user",
-        "PASSWORD": "password",
-        "HOST": "localhost",
+        'NAME': "mydb",
+        'USER': "user",
+        'PASSWORD': "123",
+        "HOST": "127.0.0.1",
         "PORT": "5432",
     }
 }

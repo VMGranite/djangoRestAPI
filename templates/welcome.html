@@ -4,6 +4,7 @@
 {% block title %}{% endblock %}
 
 {% block content %}
+    {% csrf_token %}
     <h1>Welcome to the Django REST API</h1>
     <p>
         Django, Django REST API Framework, Postgres Database, Docker
