@@ -12,6 +12,7 @@
 1. python manage.py migrate app
 
 
+
 ## Import Data
 
 To import data from JSONPlaceholder, run the following command inside the web container:
