@@ -44,8 +44,7 @@ ROOT_URLCONF = 'djangoRestAPI.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,7 +69,7 @@ DATABASES = {
         "NAME": "mydatabase",
         "USER": "user",
         "PASSWORD": "password",
-        "HOST": "127.0.0.1",
+        "HOST": "localhost",
         "PORT": "5432",
     }
 }

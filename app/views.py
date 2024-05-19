@@ -7,7 +7,8 @@ from .serializers import DataSerializer
 
 
 def welcome(request):
-    return render(request, "welcome.html", context=context)
+    # can add context information
+    return render(request, "welcome.html")
 
 
 @api_view(['GET'])
